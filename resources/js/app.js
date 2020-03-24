@@ -11,8 +11,8 @@ import VueRouter from "vue-router";
 
 window.Vue.use(VueRouter);
 
-import About from './components/About';
-import Home from './components/Home';
+import About from './components/AboutComponent';
+import Home from './components/HomeComponent';
 
 const router = new VueRouter({
     mode: 'history',
@@ -39,4 +39,5 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 const app = new Vue({
     el: '#app',
+    router
 });
